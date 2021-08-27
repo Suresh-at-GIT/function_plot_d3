@@ -39,11 +39,12 @@ var links = [];
 // Link nodes together and push them in the links array
 for (var i = 0; i < nodes.length; i++){
       if (nodes[i].target !== undefined) { 
-            for ( var x = 0; x < nodes[i].target.length; x++ ) 
+            for ( var x = 0; x < nodes[i].target.length; x++ ) {
               links.push({
                   source: nodes[i],
                   target: nodes[nodes[i].target[x]]  
               });
+            };
       };
 };
 
