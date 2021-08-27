@@ -1,5 +1,5 @@
-var   w = 1000,
-      h =  800,
+var   w = 1200,
+      h =  1000,
       circleWidth = 5; 
  
 var palette = {
@@ -62,7 +62,7 @@ var myChart = d3.select('body')
 var force = d3.layout.force()
       .nodes(nodes)
       .links([])
-      .gravity(0.1)
+      .gravity(0.4)
       .charge(-1000)
       .size([w,h]); 
 
